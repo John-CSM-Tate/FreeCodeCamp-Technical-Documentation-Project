@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+    --background-main: #373640;
+    --background-alt: #63686E;
+    --tile-background: #7E97A6;
+    --hover: #68A357;
+    --hover-shadow: #B6F7C1;
+    --text: #F9F4F5
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    color: var(--text);
+    background-color: var(--background-main);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    border-right: 2px double black;
+    background-color: var(--background-alt);
+}
+
+#navbar header {
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    height: 35px;
+}
+
+#navbar ul {
+    padding: 0;
+}
+
+#navbar li {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    list-style: none;
+    color: var(--text);
+    min-height: 50px;
+    padding: 10px 0 10px 5px;
+}
+
+#navbar li:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#navbar a:active{
+    color: var(--hover-shadow);
+}
+
+#navbar a:visited {
+    color: var(--text);
+}
+
+@media (max-width: 400px) {
+
+    #navbar {
+        width: 150px;
+        overflow: auto;
+    }
+
+
+    .title-text{
+        display: none;
+    }
+
+
+}
+
+main {
+    position: absolute;
+    top: 0;
+    margin-left: 230px;
+}
+
+@media (max-width: 400px) {
+    main {
+        margin-left: 150px;
+    }
+}
