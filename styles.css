@@ -19,6 +19,10 @@ body {
     background-color: var(--background-main);
 }
 
+header {
+    text-align: center;
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -31,7 +35,6 @@ body {
 
 #navbar header {
     padding: 5px;
-    text-align: center;
     font-size: 2rem;
     height: 35px;
 }
@@ -89,6 +92,12 @@ main {
     top: 0;
     margin-left: 230px;
 }
+
+.main-section header {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
 
 @media (max-width: 400px) {
     main {
