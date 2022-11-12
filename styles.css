@@ -19,17 +19,25 @@ body {
     background-color: var(--background-main);
 }
 
-header {
-    text-align: center;
+a {
+    color: var(--hover-shadow);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+a:visited {
+    color: var(--hover-shadow);
 }
 
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 230px;
+    width: 240px;
     height: 100%;
-    border-right: 2px double black;
+    border-right: 3px solid var(--tile-background);
     background-color: var(--background-alt);
 }
 
@@ -37,6 +45,7 @@ header {
     padding: 5px;
     font-size: 2rem;
     height: 35px;
+    text-align: center;
 }
 
 #navbar ul {
@@ -46,11 +55,11 @@ header {
 #navbar li {
     display: flex;
     align-items: center;
-    border-top: 2px solid black;
+    border-top: 1px solid var(--tile-background);
     list-style: none;
     color: var(--text);
     min-height: 50px;
-    padding: 10px 0 10px 5px;
+    padding: 10px 5px;
 }
 
 #navbar li:hover {
@@ -94,10 +103,21 @@ main {
 }
 
 .main-section header {
-    font-size: 1.3rem;
-    margin: 10px;
+    font-size: 1.5rem;
+    margin: 40px 20px 0;
+    color: var(--hover-shadow);
 }
 
+.main-section p {
+    padding: 0 20px;
+}
+
+.main-section code {
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: var(--background-alt);
+}
 
 @media (max-width: 400px) {
     main {
