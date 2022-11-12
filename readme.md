@@ -8,7 +8,7 @@ Creating a survey form for the [FreeCodeCamp](https://www.freecodecamp.org/) Res
 
 ## Screenshot
 
-![desktop screenshot](./screenshot-desktop.png) WIP
+![desktop screenshot](./screenshot-desktop.png)
 
 ## Links
 
